@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Firebase SignUp Form</title>
+</head>
+<body>
+<div style="background-color: coral; margin-top: 100px;width:50%;margin-left: 25%;">
+    <h1 align="center">Sign Up</h1>
+
+    <form style="width:50%;margin-left:25%;" onsubmit="signup(event)">
+
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping"></span>
+        <input id="firstname" type="text" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+      <br>
+
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping"></span>
+        <input id="lastname" type="text" class="form-control" placeholder="Last Name" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+      <br>
+
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+      <br>
+
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">*</span>
+        <input id="pass" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+      <br>
+      <button type="submit" value="Sign Up" class="btn btn-dark">Sign Up</button>
+    </form>
+    <br>
+</div>
+<a style="width: 50%;margin-left: 25%;" href="login.html">Already got an account? Log in!</a>
+<script src="script.js" type="module"></script>
+</body>
+</html>
